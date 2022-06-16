@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Frontend Mentor</title>
+    <script src="nav.js" defer></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+    </style>
+  </head>
+
+  <body>
+
+    <header class="primary-header flex">
+      <div class="intro">
+        <section class="masthead" role="img" aria-label="Image Description">
+  <h1>
+    The Hero Generator
+  </h1>
+</section>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only"></span>
+        </button>
+
+        <div class="element-nav">
+          <nav>
+            <div>
+              <img
+                src="images/logo.svg"
+                alt="logo representing the brand loopstudios"
+                class="logo"
+              />
+            </div>
+
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="primary-navigation flex"
+            >
+              <img
+                src="images/logo.svg"
+                alt="logo representing the brand loopstudios"
+                class="toggle-logo"
+              />
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--  Footer for mobile & Desktop -->
+
+    <footer>
+      <div class="logo-footer">
+        <img
+          src="images/logo.svg"
+          alt="logo representing the brand loopstudios"
+          class="desktop-logo"
+        />
+      </div>
+
+      <ul class="footer-navigation flex">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+
+      <div class="social-media">
+        <div class="desktop-social">
+          <img
+            src="images/icon-facebook.svg"
+            alt="square facebook logo"
+            class="hover-fb"
+          />
+          <img src="images/icon-twitter.svg" alt="The bird twitter logo " />
+          <img src="images/icon-pinterest.svg" alt="Round pinterest logo" />
+          <img
+            src="images/icon-instagram.svg"
+            alt="Square instagram camera logo"
+          />
+        </div>
+      </div>
+
+      <div class="law-rules">
+        <p>© 2021 Loopstudios.All rigths reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
