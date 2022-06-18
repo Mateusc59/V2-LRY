@@ -24,11 +24,46 @@
 
   <body>
     <header class="primary-header flex">
-      <div class="intro">
-        <section class="masthead" role="img" aria-label="Image Description">
+      <section class="masthead" role="img" aria-label="Image Description">
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only"></span>
+        </button>
+
+        <div class="element-nav">
+          <nav>
+            <div>
+              <img
+                src="images/logo.svg"
+                alt="logo representing the brand loopstudios"
+                class="logo"
+              />
+            </div>
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="primary-navigation flex"
+            >
+              <img
+                src="images/logo.svg"
+                alt="logo representing the brand loopstudios"
+                class="toggle-logo"
+              />
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-title">
           <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
-        </section>
-      </div>
+        </div>
+      </section>
     </header>
 
     <main>
@@ -50,13 +85,124 @@
               through digital experiences that bind to their brand.
             </p>
           </div>
+        </div>
+        <div class="container-grid">
           <div class="main-subtitle">
-            <h2>OUR CREATIONS</h2>
-            <button>SEE ALL</button>
+            <h2 class="subtitle">OUR CREATIONS</h2>
+            <button class="btn-subtitle">SEE ALL</button>
+          </div>
+        </div>
+        <div class="container-flex">
+          <div class="flex-grid">
+            <div class="col">
+              <img
+                src="images/desktop/image-deep-earth.jpg"
+                alt="Rectangular scenary format image of the earth from space"
+                class="card-grid"
+              />
+              <h2 class="grid-info">Deep earth</h2>
+            </div>
+            <div class="col">
+              <img
+                src="images/desktop/image-night-arcade.jpg"
+                alt="Rectangular portrait format image of arcade game with neon ligth"
+                class="card-grid"
+              />
+              <h2 class="grid-info">Night Arcade</h2>
+            </div>
+            <div class="col">
+              <img
+                src="images/desktop/image-soccer-team.jpg"
+                alt="Rectangular portrait format image of soccer player with red shirt"
+                class="card-grid"
+              />
+              <h2 class="grid-info">Soccer team VR</h2>
+            </div>
+            <div class="col">
+              <img
+                src="images/desktop/image-grid.jpg"
+                alt="Rectangular portrait format image of front racing car"
+                class="card-grid"
+              />
+              <h2 class="grid-info">The grid</h2>
+            </div>
+            <div class="col">
+              <img
+                src="images/desktop/image-from-above.jpg"
+                alt="Rectangular portrait format image of road from above"
+                class="card-grid"
+              />
+              <h2 class="grid-info">From Up Above VR</h2>
+            </div>
+            <div class="col">
+              <img
+                src="images/desktop/image-pocket-borealis.jpg"
+                alt="Rectangular portrait format image of aurora borealis"
+                class="card-grid"
+              />
+              <h2 class="grid-info">pocket borealis</h2>
+            </div>
+            <div class="col">
+              <img
+                src="images/desktop/image-curiosity.jpg"
+                alt="Rectangular image portrait format of the rover curiosity"
+                class="card-grid"
+              />
+              <h2 class="grid-info">The curiosity</h2>
+            </div>
+            <div class="col">
+              <img
+                src="images/desktop/image-fisheye.jpg"
+                alt="Rectangular image portrait format of rounded subject using fisheye effect"
+                class="card-grid"
+              />
+              <h2 class="grid-info">Make It Fisheye</h2>
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <!--  Footer for mobile & Desktop -->
+
+    <footer>
+      <div class="container-footer">
+        <div class="logo-footer">
+          <img
+            src="images/logo.svg"
+            alt="logo representing the brand loopstudios"
+            class="desktop-logo"
+          />
+        </div>
+
+        <ul class="footer-navigation flex">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+
+        <div class="social-media">
+          <div class="desktop-social">
+            <img
+              src="images/icon-facebook.svg"
+              alt="square facebook logo"
+              class="hover-fb"
+            />
+            <img src="images/icon-twitter.svg" alt="The bird twitter logo " />
+            <img src="images/icon-pinterest.svg" alt="Round pinterest logo" />
+            <img
+              src="images/icon-instagram.svg"
+              alt="Square instagram camera logo"
+            />
+          </div>
+        </div>
+
+        <div class="law-rules">
+          <p>© 2021 Loopstudios. All rigths reserved</p>
+        </div>
+      </div>
+    </footer>
 
     <!--  Footer for mobile & Desktop -->
   </body>
