@@ -15,12 +15,12 @@ body {
 
 .masthead {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: baseline;
   flex-direction: column;
   text-align: start;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-size: cover !important;
   background: url("images/desktop/image-hero.jpg") no-repeat center center
     scroll;
@@ -37,9 +37,9 @@ h1 {
   text-shadow: 1px 2px 4px rgb(0 0 0 / 80%);
   margin-bottom: 10px;
   border: 1px solid #fff;
-  max-width: 400px;
-  margin-top: 30px;
-  padding: 25px;
+  max-width: 650px;
+  margin-bottom: 150px;
+  padding: 30px 35px 30px 30px;
 }
 .main-title {
   width: 86%;
@@ -63,14 +63,14 @@ h1 {
 }
 
 .article-one {
-  width: 48%;
+  width: 40%;
   margin: 0 auto;
   border: 1px solid green;
   background-color: var(--white);
   position: absolute;
-  bottom: -125px;
-  right: -11%;
-  padding: 57px;
+  bottom: -48px;
+  right: -1%;
+  padding: 60px 2px 60px 70px;
 }
 
 .article-title {
@@ -88,12 +88,12 @@ h1 {
 
 .article-body {
   font-family: "Alata", sans-serif;
-  font-size: 1.25vw;
+  font-size: 1vw;
   letter-spacing: 0.03em;
-
-  line-height: 1;
+  line-height: 1.24;
   margin-bottom: 10px;
   border: 1px solid #fff;
+  color: grey;
   max-width: 800px;
 }
 
@@ -101,7 +101,7 @@ h1 {
   margin: auto;
   width: 70%;
   border: 1px solid blue;
-  margin-top: 200px;
+  margin-top: 120px;
 }
 
 .main-subtitle {
@@ -118,12 +118,15 @@ h1 {
   font-weight: 100;
 }
 .btn-subtitle {
+  font-family: "alata";
   padding: 10px 65px 10px 65px;
-  margin: 30px 0px 35px 0px;
+  margin: 27px 0px 35px 0px;
   background-color: transparent;
   color: black;
   font-size: 20px;
   border-radius: 3px;
+  border: 2px solid black;
+  letter-spacing: 4px;
 }
 .btn-subtitle:hover {
   background-color: var(--black);
@@ -162,6 +165,10 @@ h1 {
   width: 100%;
 }
 
+.card-grid:hover {
+  opacity: 0.5;
+}
+
 .grid-info {
   position: absolute;
   color: hsl(0, 0%, 100%);
@@ -196,7 +203,7 @@ footer {
 .desktop-social {
   display: flex;
   justify-content: flex-end;
-  margin-top: -6.5em;
+  margin-top: -6em;
   margin-right: 2em;
 }
 
@@ -206,15 +213,17 @@ footer {
   padding-bottom: 0.75em;
 }
 
-.desktop-social img:hover,
-.desktop-social img:focus {
-  border-bottom: 2.5px solid hsl(0, 0%, 100%);
-  padding-bottom: 0.75em;
-  max-width: 2em;
-  cursor: pointer;
+img.hover-fb {
+  background: black;
+  border: 1px solid transparent;
 }
 
-.container-nav {
+img.hover-fb:hover {
+  border-bottom: 1px solid white;
+  top: 0px;
+}
+
+.hover-fb .container-nav {
   width: 95%;
 }
 
@@ -232,6 +241,12 @@ a {
 
 .footer-li {
   margin: 0px 40px 0px 0px;
+}
+
+.footer-li a:hover {
+  color: var(--white);
+  list-style: none;
+  border-bottom: 1px solid white;
 }
 
 .footer-navigation a {
@@ -252,6 +267,7 @@ a {
 .law-rules {
   text-align: right;
   color: hsl(0, 0%, 100%);
+  margin-top: -11px;
 }
 
 /* NAv */
@@ -274,6 +290,7 @@ nav {
 .element-nav {
   width: 100%;
   overflow: hidden;
+  margin-top: 15px;
 }
 
 .mobile-nav-toggle {
@@ -319,6 +336,17 @@ nav {
     transform: translateX(100%);
     transition: transform 350ms ease;
     background: hsl(0, 0%, 0%);
+  }
+
+  .masthead {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .flex {
+    display: flex;
+    gap: var(--gap, 1rem);
   }
 
   .primary-navigation[data-visible="true"] {
@@ -372,7 +400,20 @@ nav {
   }
 
   .logo {
-    display: none;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .container-logo-nav {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .element-nav {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0px;
   }
 
   h1 {
@@ -386,8 +427,8 @@ nav {
     text-shadow: 1px 2px 4px rgb(0 0 0 / 80%);
     margin-bottom: 10px;
     border: 1px solid #fff;
-    max-width: 300px;
-    margin-top: 30px;
+    max-width: 375px;
+    margin-bottom: 100px;
     padding: 25px 10px 25px 15px;
   }
   .contain-img {
@@ -417,8 +458,8 @@ nav {
   .article-body {
     font-family: "Alata", sans-serif;
     font-size: 3.25vw;
-    letter-spacing: 0.03em;
-    line-height: 1;
+    letter-spacing: 1px;
+    line-height: 1.5;
     margin-bottom: 10px;
     border: 1px solid #fff;
     text-align: center;
@@ -441,8 +482,6 @@ nav {
     max-width: 100%;
     width: 100%;
   }
-  .main-subtitle {
-  }
 
   .subtitle {
     display: inline-block;
@@ -459,6 +498,14 @@ nav {
     border: 1px solid blue;
     margin-top: 20px;
   }
+
+  .container-flex {
+    margin: auto;
+    width: 70%;
+    border: 1px solid purple;
+    margin-top: 25px;
+  }
+
   .flex-grid {
     display: flex;
     flex-direction: column;
