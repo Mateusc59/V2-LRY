@@ -131,6 +131,7 @@ h1 {
 .btn-subtitle:hover {
   background-color: var(--black);
   color: var(--white);
+  cursor: pointer;
 }
 
 .btn-subtitle-mobile {
@@ -167,6 +168,10 @@ h1 {
 
 .card-grid:hover {
   opacity: 0.5;
+}
+
+.col:hover .grid-info {
+  color: #000;
 }
 
 .grid-info {
@@ -221,6 +226,7 @@ img.hover-fb {
 img.hover-fb:hover {
   border-bottom: 1px solid white;
   top: 0px;
+  cursor: pointer;
 }
 
 .hover-fb .container-nav {
@@ -237,6 +243,8 @@ a {
   color: var(--white);
   list-style: none;
   text-decoration: none;
+  font-family: "alata";
+  font-weight: 100;
 }
 
 .footer-li {
