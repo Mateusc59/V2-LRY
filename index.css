@@ -53,7 +53,6 @@ h1 {
 .contain-img {
   margin: auto;
   width: 70%;
-  border: 1px solid violet;
   margin-top: 50px;
   position: relative;
 }
@@ -65,7 +64,6 @@ h1 {
 .article-one {
   width: 40%;
   margin: 0 auto;
-  border: 1px solid green;
   background-color: var(--white);
   position: absolute;
   bottom: -48px;
@@ -100,7 +98,6 @@ h1 {
 .container-grid {
   margin: auto;
   width: 70%;
-  border: 1px solid blue;
   margin-top: 120px;
 }
 
@@ -140,7 +137,6 @@ h1 {
 .container-flex {
   margin: auto;
   width: 70%;
-  border: 1px solid purple;
   margin-top: 50px;
 }
 
@@ -157,7 +153,6 @@ h1 {
   position: relative;
 }
 .flex-grid-part2 {
-  border: 1px solid gold;
   display: flex;
   flex-wrap: wrap;
 }
@@ -198,7 +193,6 @@ footer {
 .container-footer {
   margin: auto;
   width: 70%;
-  border: 1px solid silver;
 }
 
 .desktop-logo {
@@ -480,7 +474,6 @@ nav {
     min-height: 100%;
     text-align: center;
     margin: 0 auto;
-    border: 1px solid green;
     background-color: var(--white);
     display: contents;
     padding: 7px;
@@ -503,14 +496,12 @@ nav {
   .container-grid {
     margin: auto;
     width: 70%;
-    border: 1px solid blue;
     margin-top: 20px;
   }
 
   .container-flex {
     margin: auto;
     width: 70%;
-    border: 1px solid purple;
     margin-top: 25px;
   }
 
