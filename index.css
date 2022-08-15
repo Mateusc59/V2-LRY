@@ -163,10 +163,12 @@ body {
   
   .card-grid:hover {
     opacity: 0.5;
+    cursor: pointer;
   }
   
   .col:hover .grid-info {
     color: #000;
+    cursor: pointer;
   }
   
   .grid-info {
