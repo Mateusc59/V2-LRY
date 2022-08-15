@@ -436,7 +436,6 @@ body {
     .contain-img {
       margin: auto;
       width: 70%;
-      border: 1px solid violet;
       margin-top: 50px;
       display: flex;
       flex-wrap: wrap;
